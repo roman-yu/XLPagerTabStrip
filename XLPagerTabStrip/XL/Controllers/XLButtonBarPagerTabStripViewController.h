@@ -33,5 +33,6 @@
 @property (copy) void (^changeCurrentIndexBlock)(XLButtonBarViewCell* oldCell, XLButtonBarViewCell *newCell, BOOL animated);
 
 @property (readonly, nonatomic) XLButtonBarView * buttonBarView;
+@property (strong, nonatomic) UIColor * buttonBarCellLabelColor;
 
 @end

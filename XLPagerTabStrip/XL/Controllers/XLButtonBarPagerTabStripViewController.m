@@ -404,6 +404,9 @@
     UIViewController<XLPagerTabStripChildItem> * childController =   [self.pagerTabStripChildViewControllers objectAtIndex:indexPath.item];
     
     [buttonBarCell.label setText:[childController titleForPagerTabStripViewController:self]];
+    if (self.buttonBarCellLabelColor) {
+        [buttonBarCell.label setTextColor:self.buttonBarCellLabelColor];
+    }
     
     if (self.buttonBarView.labelFont) {
         buttonBarCell.label.font = self.buttonBarView.labelFont;
